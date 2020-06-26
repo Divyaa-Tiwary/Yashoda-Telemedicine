@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "448657933240",
+    "firebase_url": "https://yashoda-telemedicine-app.firebaseio.com",
+    "project_id": "yashoda-telemedicine-app",
+    "storage_bucket": "yashoda-telemedicine-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448657933240:android:4bc71e92785392c00d054d",
+        "android_client_info": {
+          "package_name": "hospital.yashoda.ps_1_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448657933240-3n6934f5rricv7r3aepge022dfb5l2kq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "a4b04ad9c485608a258e2aca62f2df0c780026c8"
+          }
+        },
+        {
+          "client_id": "448657933240-hebir6n00b7lm8nknd6us1p09075t1k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "c92d98caa04dcb8e52bf2b0de2540ea0c9bde211"
+          }
+        },
+        {
+          "client_id": "448657933240-4dirr81iju3baut9otg3r7bchgosnn00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "17e66279d49c1620c66ba34b5486ecb41dca0481"
+          }
+        },
+        {
+          "client_id": "448657933240-5jaul8rkqcsc2mq1h0b2cdvpm1406kqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "c702484093053832fd67d1a93b7e380400fa0f1f"
+          }
+        },
+        {
+          "client_id": "448657933240-7vf0p458686te06tsuslqhian9dk4r2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "055ab18f3fe3f549f86aa80b74dfa40b7496631c"
+          }
+        },
+        {
+          "client_id": "448657933240-nujngqmv87jfa9dep7ddqg7nsl9rtihi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.yashoda.ps_1_project",
+            "certificate_hash": "b70f41a73b3f22058dfc024e0059969d8ea9a2bc"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQI10nPbRYc36O6042Be03aOm5a_q1css"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

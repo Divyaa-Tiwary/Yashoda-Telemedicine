@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:layout_marginVertical="30dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle">
+
+            <ImageView
+                android:id="@+id/patient"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/orange_circle"
+                android:src="@drawable/patient_logo"
+                app:layout_constraintBottom_toTopOf="@id/enterName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/enterName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter Name"
+                android:padding="10dp"
+                android:editable="false"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/enterAge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/patient" />
+
+            <EditText
+                android:id="@+id/enterAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter Age"
+                android:padding="10dp"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/enterSex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterName" />
+
+            <EditText
+                android:id="@+id/enterSex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter Gender"
+                android:padding="10dp"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/enterNumber"
+                app:layout_constraintTop_toBottomOf="@id/enterAge" />
+
+            <EditText
+                android:id="@+id/enterNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter Phone No."
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@id/enterEmail"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterSex" />
+
+            <EditText
+                android:id="@+id/enterEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter Email"
+                android:editable="false"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@id/enterState"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterNumber" />
+
+            <EditText
+                android:id="@+id/enterState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:hint="Enter State"
+                android:padding="10dp"
+                android:textColorHint="@color/Black"
+                app:layout_constraintBottom_toTopOf="@id/enterCountry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterEmail" />
+
+            <EditText
+                android:id="@+id/enterCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/border_style"
+                android:text="India"
+                android:editable="true"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@id/enterButton"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterState" />
+
+
+            <Button
+                android:id="@+id/enterButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/enterCountry"
+                android:background="@drawable/edit_round"
+                android:text="ENTER"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

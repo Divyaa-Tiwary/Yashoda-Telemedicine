@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hospital.yashoda.ps_1_project">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".YashodaApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PrescriptionPage"></activity>
+        <activity android:name=".DoctorFrame" />
+        <activity android:name=".MedicalReportsDoctors2" />
+        <activity android:name=".MedicalReportsDoctors" />
+        <activity android:name=".BookAppointment" />
+        <activity android:name=".doctor.DoctorRegistrationPage" />
+        <activity android:name=".PhysicalConsultation" />
+        <activity android:name=".VideoConsultation" />
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".FramePage" />
+        <activity android:name=".doctor.DoctorLogin" />
+        <activity android:name=".BillsPage" />
+        <activity android:name=".MedicalReportsPage" />
+        <activity android:name=".WelcomePage" />
+        <activity android:name=".EmergencyService" />
+        <activity android:name=".login.ActivityLogin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

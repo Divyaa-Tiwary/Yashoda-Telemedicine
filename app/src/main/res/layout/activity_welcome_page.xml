@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".WelcomePage">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="162dp"
+        android:layout_height="164dp"
+        android:src="@drawable/ic_group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:id="@+id/welcome"
+        android:text="@string/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:id="@+id/continue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        android:text="@string/cont"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageDoctor"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/doctor_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/emergencyCard"
+        app:layout_constraintTop_toBottomOf="@id/continue_text"
+        app:layout_constraintEnd_toStartOf="@id/image_patient"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image_patient"
+        app:layout_constraintBottom_toBottomOf="@id/imageDoctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageDoctor"
+        app:layout_constraintStart_toEndOf="@id/imageDoctor"
+        android:id="@+id/image_patient" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:id="@+id/emergencyCard"
+        android:layout_height="60dp"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/image_patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_round"
+            android:text="EMERGENCY LOGIN"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:id="@+id/emergency_login_text"
+            android:textSize="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

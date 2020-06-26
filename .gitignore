@@ -1,0 +1,13 @@
+
+/build/
+/app/build/
+/app/release/
+/app/release/app-release.aab
+/app/release/app-release.apk
+/app/release/output.json
+/app/app.iml
+/.gradle/
+/.idea/
+/build/intermediates/lint-cache/
+*.iml
+local.properties

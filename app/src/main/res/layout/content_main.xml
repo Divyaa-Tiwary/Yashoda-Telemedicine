@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color1"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YTH"
+                    android:textColor="@color/White"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/box1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toTopOf="@id/box3"
+        app:layout_constraintEnd_toStartOf="@id/box2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_line" />
+
+    <ImageView
+        android:id="@+id/box2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="@id/box1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/box1"
+        app:layout_constraintTop_toTopOf="@id/box1" />
+
+    <ImageView
+        android:id="@+id/box3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toTopOf="@id/box5"
+        app:layout_constraintEnd_toStartOf="@id/box4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box1" />
+
+    <ImageView
+        android:id="@+id/box4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="@id/box3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/box3"
+        app:layout_constraintTop_toTopOf="@id/box3" />
+
+    <ImageView
+        android:id="@+id/box5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/box2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box3" />
+
+    <ImageView
+        android:id="@+id/box6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="@id/box5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/box5"
+        app:layout_constraintTop_toTopOf="@id/box5" />
+
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_1"
+        app:layout_constraintBottom_toBottomOf="@id/box1"
+        app:layout_constraintEnd_toEndOf="@id/box1"
+        app:layout_constraintStart_toStartOf="@id/box1"
+        app:layout_constraintTop_toTopOf="@id/box1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="OPD Physical Consultation"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/box1"
+        app:layout_constraintEnd_toEndOf="@id/box1"
+        app:layout_constraintStart_toStartOf="@id/box1" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_1"
+        app:layout_constraintBottom_toBottomOf="@id/box2"
+        app:layout_constraintEnd_toEndOf="@id/box2"
+        app:layout_constraintStart_toStartOf="@id/box2"
+        app:layout_constraintTop_toTopOf="@id/box2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="Online Video Consultation"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/box2"
+        app:layout_constraintEnd_toEndOf="@id/box2"
+        app:layout_constraintStart_toStartOf="@id/box2" />
+
+    <ImageView
+        android:id="@+id/box3image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_3"
+        app:layout_constraintBottom_toBottomOf="@id/box3"
+        app:layout_constraintEnd_toEndOf="@id/box3"
+        app:layout_constraintStart_toStartOf="@id/box3"
+        app:layout_constraintTop_toTopOf="@id/box3" />
+
+    <TextView
+        android:id="@+id/box3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Reports"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/box3"
+        app:layout_constraintEnd_toEndOf="@id/box3"
+        app:layout_constraintStart_toStartOf="@id/box3" />
+
+    <ImageView
+        android:id="@+id/box4image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_4"
+        app:layout_constraintBottom_toBottomOf="@id/box4"
+        app:layout_constraintEnd_toEndOf="@id/box4"
+        app:layout_constraintStart_toStartOf="@id/box4"
+        app:layout_constraintTop_toTopOf="@id/box4" />
+
+    <TextView
+        android:id="@+id/box4text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Bills"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/box4"
+        app:layout_constraintEnd_toEndOf="@id/box4"
+        app:layout_constraintStart_toStartOf="@id/box4" />
+
+    <ImageView
+        android:id="@+id/box5image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_5"
+        app:layout_constraintBottom_toBottomOf="@id/box5"
+        app:layout_constraintEnd_toEndOf="@id/box5"
+        app:layout_constraintStart_toStartOf="@id/box5"
+        app:layout_constraintTop_toTopOf="@id/box5" />
+
+    <TextView
+        android:id="@+id/box5text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Prescription"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/box5"
+        app:layout_constraintEnd_toEndOf="@id/box5"
+        app:layout_constraintStart_toStartOf="@id/box5" />
+
+    <ImageView
+        android:id="@+id/box6image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/box_6"
+        app:layout_constraintBottom_toBottomOf="@id/box6"
+        app:layout_constraintEnd_toEndOf="@id/box6"
+        app:layout_constraintStart_toStartOf="@id/box6"
+        app:layout_constraintTop_toTopOf="@id/box6" />
+
+    <TextView
+        android:id="@+id/box6text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Emergency Login"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/box6"
+        app:layout_constraintEnd_toEndOf="@id/box6"
+        app:layout_constraintStart_toStartOf="@id/box6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
