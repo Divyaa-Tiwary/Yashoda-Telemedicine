@@ -65,7 +65,7 @@ class FramePage : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.nav_profile -> {
-                Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, ProfileActivity::class.java))
             }
             R.id.nav_appointments -> {
                 Toast.makeText(this, "Messages clicked", Toast.LENGTH_SHORT).show()

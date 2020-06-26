@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrescriptionPage"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".PrescriptionPage" />
         <activity android:name=".DoctorFrame" />
         <activity android:name=".MedicalReportsDoctors2" />
         <activity android:name=".MedicalReportsDoctors" />

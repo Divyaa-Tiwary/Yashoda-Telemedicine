@@ -66,6 +66,7 @@ class ActivityLogin : AppCompatActivity() {
             firestore.collection("Users").document(account?.email.toString()).get()
                 .addOnSuccessListener {
                     if (it.exists()) {
+                        Log.d("TAG!!!!", "caleed")
                         val pm = PreferenceUtils
                         pm.setUser(
                             Users(
@@ -85,6 +86,7 @@ class ActivityLogin : AppCompatActivity() {
                             Intent(this, FramePage::class.java)
                         )
                     } else {
+                        Log.d("TAG!!!!", "calee sarddasd")
                         startActivity(
                             RegisterPage.newInstance(
                                 this,
@@ -95,7 +97,7 @@ class ActivityLogin : AppCompatActivity() {
                     }
                 }
         } catch (e: ApiException) {
-            Log.d("TAG", e.toString() + "error")
+            Log.d("TAG!!!!", e.toString() + "error")
         }
     }
 
